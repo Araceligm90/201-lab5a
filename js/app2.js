@@ -72,7 +72,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-testSumAndMultiply(4,7,5);
+sumAndMultiply(4,7,5);
 
 
 
@@ -94,17 +94,17 @@ function and see if the test passes.*/
 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(arr) { //eslint-disable-line
-  let firstTwoNumbs = sum(arr[0],arr[1]);
-  let additionOfthree = sum(firstTwoNumbs[0], arr[2]);
-  let ourMessage = `${arr[0]},${arr[1]},${arr[2]} was passed in as an array of numbers, and ${additionOfthree[0]} is their sum.`;
-  let returnArray =[additionOfthree[0],ourMessage];
+function sumArray(arr) 
+  let firstTwoElements = sum(arr[0],arr[1]);
+  let sumOfThree = sum(firstTwoElements[0], arr[2]);
+  let result = `${arr[0]},${arr[1]},${arr[2]} was passed in as an array of numbers, and ${sumOfThree[0]} is their sum.`;
+  let returnArray =[sumOfThree[0], result];
   return returnArray;
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-testSumArray(testArray);
+sumArray(testArray);
 
 
 
@@ -124,15 +124,14 @@ testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
 
-function multiplyArray(multArr) { //eslint-disable-line
-  let multTwoNumbs = multiply(multArr[0],multArr[1]);
-  let multOfThree = multiply(multTwoNumbs[0],multArr[2]);
-  let multMessage = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${multOfThree[0]}.`;
-  let returnMultArray = [multOfThree[0],multMessage];
-  console.log(returnMultArray);
-  return returnMultArray;
-
+function multiplyArray(arr) { 
+  let product1 = multiply(arr[0], arr[1]) [0];
+  let element1 = multiply(product1, arr[2])[0]; 
+  let element2 = `The numbers ${arr} have a product of ${element1}.`;
+  let result = [element1, element2];
+  console.log(result);
+  return result;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-testMultiplyArray(testArray);
+multiplyArray(testArray);

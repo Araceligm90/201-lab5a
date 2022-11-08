@@ -86,7 +86,7 @@ function and see if the test passes.*/
 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(arr) 
+function sumArray(arr) {
   let firstTwoElements = sum(arr[0],arr[1]);
   let sumOfThree = sum(firstTwoElements[0], arr[2]);
   let result = `${arr[0]},${arr[1]},${arr[2]} was passed in as an array of numbers, and ${sumOfThree[0]} is their sum.`;
